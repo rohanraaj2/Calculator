@@ -39,9 +39,11 @@ def calculation():
 
   operator = operator_selection()
   print ("Your result is", end = " ")
+  
   if operator == 1:
     result = add (num1, num2)
     print (result)
+  
   elif operator == 2:
     result = subract (num1, num2)
     print (result)
@@ -59,12 +61,13 @@ def calculation():
   print ("2: No")
 
   decision = input()
-
-  if decision == '2':
-    print ("Thank you for using this calculator")  
-  elif decision == '1':
-    calculation()
   
+  if decision == '1':
+      calculation()
+  
+  elif decision == '2':
+    print ("Thank you for using this calculator")  
+    
   else:
     print ("Invalid answer")
 
