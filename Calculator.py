@@ -55,20 +55,17 @@ def calculation():
     print (result)
 
   print ("Perform another calculation?")
-  print ("Y: Yes")
-  print ("N: No")
+  print ("1: Yes")
+  print ("2: No")
 
   decision = input()
 
-  if decision == 'Y' or 'y':
-    calculation()
-  elif decision == 'N' or 'n':
+  if decision == '2':
     print ("Thank you for using this calculator")  
+  elif decision == '1':
+    calculation()
+  
   else:
     print ("Invalid answer")
 
 calculation()
-
-
-
-
